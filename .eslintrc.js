@@ -33,5 +33,6 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'import/no-extraneous-dependencies': 0,
     'no-console': 0,
+    'react/jsx-no-bind': 0,
   },
 };
