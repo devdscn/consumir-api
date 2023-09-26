@@ -2,6 +2,7 @@ import React from 'react';
 import { FaHome, FaSignInAlt, FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Nav } from './styled';
+// import history from '../../services/history';
 
 export default function Header() {
   return (
@@ -13,7 +14,7 @@ export default function Header() {
         <FaUserAlt size={24} />
       </Link>
       <Link to="/login">
-        <FaSignInAlt size={24} />
+        <FaSignInAlt size={24} /* onClick={() => history.go('/login')} */ />
       </Link>
     </Nav>
   );

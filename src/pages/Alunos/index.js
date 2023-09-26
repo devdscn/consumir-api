@@ -30,9 +30,11 @@ export default function Alunos() {
             </ProfilePicture>
             <span>{aluno.nome}</span>
             <span>{aluno.email}</span>
+
             <Link to={`/aluno/${aluno.id}/edit`}>
               <FaEdit size={16} />
             </Link>
+
             <Link to={`/aluno/${aluno.id}/delete`}>
               <FaWindowClose size={16} />
             </Link>

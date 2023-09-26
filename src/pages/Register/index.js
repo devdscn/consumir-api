@@ -25,7 +25,7 @@ export default function Register() {
       formErrors = true;
       toast.error('E-mail inválido');
     }
-    if (password.length < 6 || password.length > 255) {
+    if (password.length < 6 || password.length > 50) {
       formErrors = true;
       toast.error('Senha deve ter entre 6 e 60 255 caracteres');
     }
@@ -39,7 +39,7 @@ export default function Register() {
       });
       toast.success('Cadastro concluído');
       history.push('/login');
-      history.go(0);
+      // history.go(0);
     } catch (error) {
       const errors = get(error, 'response.data.errors', []);
       errors.map((erro) => toast.error(erro));
