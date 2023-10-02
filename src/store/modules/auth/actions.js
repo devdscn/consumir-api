@@ -6,15 +6,17 @@ export function loginRequest(payload) {
     payload,
   };
 }
-export function loginSucess(payload) {
+
+export function loginSuccess(payload) {
   return {
-    type: types.BOTAO_CLICADO_SUCESS,
+    type: types.LOGIN_SUCCESS,
     payload,
   };
 }
+
 export function loginFailure(payload) {
   return {
-    type: types.BOTAO_CLICADO_FAILURE,
+    type: types.LOGIN_FAILURE,
     payload,
   };
 }
