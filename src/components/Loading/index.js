@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { ProgressBar } from 'react-loader-spinner';
 import { Container } from './styled';
 
 export default function Loading({ isLoading }) {
@@ -7,7 +8,17 @@ export default function Loading({ isLoading }) {
   return (
     <Container>
       <div />
-      <span>Carregando...</span>
+      <span>
+        <ProgressBar
+          height="160"
+          width="160"
+          ariaLabel="progress-bar-loading"
+          wrapperStyle={{}}
+          wrapperClass="progress-bar-wrapper"
+          borderColor="#F4442E"
+          barColor="#51E5FF"
+        />
+      </span>
     </Container>
   );
 }
